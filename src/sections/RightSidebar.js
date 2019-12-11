@@ -2,7 +2,7 @@ import React from 'react';
 
 function RightSidebar() {
   return (
-    <div className="App">
+    <div className="r-bar">
     </div>
   );
 }

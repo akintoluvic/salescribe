@@ -12,7 +12,7 @@ function LeftSidebar() {
           <p>a</p>
         </div>
         <div className='navs'>
-          <img src={pic} alt='menu' />
+          <img src={pic} alt='menu' width='45px' height='45px' />
         </div>
     </div>
   );
