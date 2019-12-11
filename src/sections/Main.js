@@ -1,10 +1,10 @@
 import React from 'react';
 
-function RightSidebar() {
+function Main() {
   return (
     <div className="App">
     </div>
   );
 }
 
-export default RightSidebar;
+export default Main;
