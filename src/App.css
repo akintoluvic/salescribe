@@ -8,20 +8,34 @@
   width: 100vw;
 
 }
-.navbar {
+.l-bar {
   background-color: #F4F4FB;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 75px;
+  width: 100px;
   height: 100vh;
 }
 
-.r-bar {
+/* .r-bar {
   width: 500px;
   border-left: 2px solid #9391B1;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.r-bar .top {
+  height: 252px;
+  width: 100%;
+  background: brown;
+  border-radius: 5px;
+}
+.r-bar .top .title {
+
+} */
+img {
+  border-radius: 50%;
 }
 .App-header {
   
