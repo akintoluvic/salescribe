@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import pic from '../../public/pic.png'
+import pic from '../assets/pic.png'
 
 function LeftSidebar() {
   return (
@@ -10,7 +10,7 @@ function LeftSidebar() {
 
         </div>
         <div className='navs'>
-
+          <img src={pic} alt='menu' />
         </div>
     </div>
   );
