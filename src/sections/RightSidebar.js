@@ -1,10 +1,13 @@
 import React from 'react';
 
-function RightSidebar() {
+
+
+const RightSidebar = () => {
+  
   return (
-    <div className="r-bar">
-      <div className='top' >
-        <div className='title'>
+    <div style={rBar}>
+      <div style={tTop} >
+        <div style={title}>
           New Order
         </div>
         <div className='order'>
@@ -20,22 +23,23 @@ function RightSidebar() {
 
 export default RightSidebar;
 
-const RitBar = {
-  rBar: {
-    width: '500px',
-    borderLeft: '2px solid #9391B1',
-    padding: '15px',
-    boxSizing: 'borderBox',
-  },
-  Ttop: {
-    height: '252px',
-    width: '100%',
-    background: 'brown',
-    borderRadius: '5px',
-  },
-  Title: {
-    width: '100%',
-    background: 'white',
-    height: '45px'
-  }
-}
+const rBar = {
+  width: "500px",
+  borderLeft: "2px solid #9391B1",
+  padding: "15px",
+  boxSizing: "border-box"
+};
+const tTop = {
+  height: "252px",
+  width: "100%",
+  background: "brown",
+  borderRadius: "5px",
+  border: '1px solid #F0F0F7',
+  
+};
+const title = {
+  width: "100%",
+  background: "white",
+  padding: '12px 20px',
+  textAlign: 'right'
+};
