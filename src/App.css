@@ -1,5 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   display: flex;
+  width: 100vw;
+
 }
 .navbar {
   background-color: #F4F4FB;
@@ -7,13 +14,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center
+  justify-content: space-between;
+  width: 75px;
+  height: 100vh;
 }
 
 .App-header {
   
-  min-height: 100vh;
-  ;
   font-size: calc(10px + 2vmin);
-  color: white;
 }

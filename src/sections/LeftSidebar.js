@@ -7,7 +7,9 @@ function LeftSidebar() {
     <div className="navbar">
         <Link />
         <div className='navs'>
-
+          <p>a</p>
+          <p>a</p>
+          <p>a</p>
         </div>
         <div className='navs'>
           <img src={pic} alt='menu' />
