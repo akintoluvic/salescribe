@@ -6,8 +6,10 @@
 .App {
   display: flex;
   width: 100vw;
-  /* font-family: ; */
+  font-weight: bold;
+  font-family: 'Arial';
 }
+
 .l-bar {
   background-color: #F4F4FB;
   text-align: center;
@@ -18,12 +20,56 @@
   width: 100px;
   height: 100vh;
 }
+.main {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.main .top {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+table .center {
+  text-align: center;
+}
+table thead:last-child thead:first-child {
+  border-bottom-left-radius: 25px;
+}
+table tr:last-child() {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+thead {
+  height: 40px;
+  background-color: #F4F4FB;
+  text-align: left;
+  border-radius: 5px;
+}
+tbody > :nth-child(even) {
+  background-color: #FAFAFC;
+}
+tr {
+  height: 60px;
+  border-radius: 25px;
+}
+tr:hover {
+  background-color: #F4F4FB;
+}
 
 /* .r-bar {
   width: 500px;
   border-left: 2px solid #9391B1;
   padding: 15px;
   box-sizing: border-box;
+  color: #72748E;
+  fontSize: 1rem;
 }
 .r-bar .top {
   height: 252px;

@@ -6,6 +6,7 @@ function LeftSidebar() {
   return (
     <div className="l-bar">
         <div className='navs'>
+          <img src={pic} alt='menu' width='45px' height='45px' />
           <Link>
             <img src={pic} alt='menu' width='45px' height='45px' />
             Meadle

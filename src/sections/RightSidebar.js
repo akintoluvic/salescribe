@@ -21,13 +21,13 @@ const RightSidebar = () => {
       </div>
       <div style={tTop} >
         <div style={title}>
-          Click an item to add to list
+          Add item to list
           <input placeholder='Filter List' />
         </div>
         <div style={order}>
           <h4>Meat</h4>
-          <label htmlFor='meat-1'>
-            <input type='checkbox' name='meat-1' />Big goat meat
+          <label htmlFor='meat-'>
+            <input type='checkbox' name='meat-' />Big goat meat
             <span>100</span>
           </label>
           <br></br>
@@ -76,7 +76,6 @@ const rBar = {
   boxSizing: "border-box",
   color: '#72748E',
   fontSize: '1rem',
-  fontWeight: 'bold'
 };
 const tTop = {  
   height: "252px",
@@ -88,7 +87,8 @@ const title = {
   width: "100%",
   background: "#F0F0F7",
   padding: '12px 20px',
-  textAlign: 'right'
+  textAlign: 'right',
+  display: 'inline-flex'
 };
 const order = {
   width: '100%',
