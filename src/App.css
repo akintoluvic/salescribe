@@ -34,6 +34,10 @@
 .r-bar .top .title {
 
 } */
+input {
+  margin-right: 10px;
+}
+span {text-align: right;}
 img {
   border-radius: 50%;
 }
