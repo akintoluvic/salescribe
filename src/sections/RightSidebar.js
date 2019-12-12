@@ -74,9 +74,11 @@ const rBar = {
   borderLeft: "2px solid #9391B1",
   padding: "15px",
   boxSizing: "border-box",
-  color: '#72748E'
+  color: '#72748E',
+  fontSize: '1rem',
+  fontWeight: 'bold'
 };
-const tTop = {
+const tTop = {  
   height: "252px",
   width: "100%",
   borderRadius: "5px",

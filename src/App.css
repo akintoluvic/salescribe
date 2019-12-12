@@ -6,7 +6,7 @@
 .App {
   display: flex;
   width: 100vw;
-
+  /* font-family: ; */
 }
 .l-bar {
   background-color: #F4F4FB;
