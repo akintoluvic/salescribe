@@ -19,7 +19,7 @@ const RightSidebar = () => {
           <button className='button'>CONFIRM</button>
         </div>
       </div>
-      <div className='r-top' >
+      <div className='r-bottom'  >
         <div className='title b-title'>
           Add item to list
           <input placeholder='Filter List' />
@@ -40,19 +40,83 @@ const RightSidebar = () => {
             </label>
             <span>100</span>
           </div>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+
+          <h4>Meat</h4>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+
+          <h4>Meat</h4>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+
+
           
-          {/* <br></br> */}
-          <label htmlFor='meat-1'>
-            <input type='checkbox' name='meat-1' />Big goat meat
-          </label>
-          <br></br>
-          <label htmlFor='meat-1'>
-            <input type='checkbox' name='meat-1' />Big goat meat
-          </label>
-          <br></br>
-          <label htmlFor='meat-1'>
-            <input type='checkbox' name='meat-1' />Big goat meat
-          </label>
 
           <h4>Meat</h4>
           <label htmlFor='meat-1'>
