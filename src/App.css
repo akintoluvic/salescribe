@@ -68,6 +68,7 @@ tr:hover {
   background-color: #F4F4FB;
 }
 
+/* Right Bar */
 .r-bar {
   width: 500px;
   border-left: 2px solid #9391B1;
@@ -91,13 +92,15 @@ tr:hover {
 }
 .order  {
   width: 100%;
-  
   padding: 10px 28px;
+}
+.order-items {
+  padding: 10px 10px;
 }
 .sold {
   width: 100%;
   height: 53px;
-  margin-top: 153px;
+  margin-top: 68px;
   display: inline-flex;
   align-items: center;
   padding: 0 20px;
@@ -111,6 +114,20 @@ tr:hover {
   border: 0;
   color: #fff;
   text-transform: uppercase;
+}
+.options {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+.options:hover {
+  background-color: #F4F4FB;
+}
+
+.options input {
+  margin-right: 10px;
 }
 input {
   margin-right: 10px;

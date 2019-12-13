@@ -24,13 +24,24 @@ const RightSidebar = () => {
           Add item to list
           <input placeholder='Filter List' />
         </div>
-        <div className='order'>
+        <div className='order order-items'>
           <h4>Meat</h4>
-          <label for='meat-'>
-            <input type='checkbox' name='meat-' />Big goat meat
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
             <span>100</span>
-          </label>
-          <br></br>
+          </div>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+          
+          {/* <br></br> */}
           <label htmlFor='meat-1'>
             <input type='checkbox' name='meat-1' />Big goat meat
           </label>
