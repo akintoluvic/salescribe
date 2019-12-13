@@ -20,7 +20,7 @@ const RightSidebar = () => {
         </div>
       </div>
       <div className='r-top' >
-        <div className='title'>
+        <div className='title b-title'>
           Add item to list
           <input placeholder='Filter List' />
         </div>
@@ -88,38 +88,3 @@ export default RightSidebar;
 //   color: '#72748E',
 //   // fontSize: '1rem',
 // };
-// const tTop = {  
-//   height: "252px",
-//   width: "100%",
-//   borderRadius: "5px",
-//   border: '1px solid #F0F0F7',
-// };
-// const title = {
-//   width: "100%",
-//   background: "#F0F0F7",
-//   padding: '12px 20px',
-//   textAlign: 'right',
-//   display: 'inline-flex'
-// };
-// const order = {
-//   width: '100%',
-//   height: '153px',
-//   borderBottom: '1px solid #F0F0F7',
-//   padding: '10px 28px',
-// }
-// const sold = {
-//   width: '100%',
-//   height: '53px',
-//   display: 'inline-flex',
-//   alignItems: 'center',
-//   padding: '0 20px',
-//   justifyContent: 'space-between'
-// }
-// const button = {
-//   padding: '7px 23px',
-//   background: '#221ECC',
-//   borderRadius: '20px',
-//   border: 0,
-//   color: '#fff',
-//   textTransform: 'uppercase'
-// }

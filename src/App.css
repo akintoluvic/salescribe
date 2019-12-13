@@ -86,9 +86,22 @@ tr:hover {
 .title {
   width: 100%;
   background: #F0F0F7;
-  padding: 12px 20px;
-  text-align: right;
+  padding: 10px 20px;
+  /* text-align: right; */
   display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.b-title {
+  padding: 5px 10px 5px 20px;
+}
+.title input {
+  border-radius: 20px;
+  border: 2px solid #F4F4FB;
+  width: 150px;
+  padding: 5px 20px ;
+  font-weight: bold;
+  font-size: 12px;
 }
 .order  {
   width: 100%;
