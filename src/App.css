@@ -68,23 +68,50 @@ tr:hover {
   background-color: #F4F4FB;
 }
 
-/* .r-bar {
+.r-bar {
   width: 500px;
   border-left: 2px solid #9391B1;
   padding: 15px;
   box-sizing: border-box;
   color: #72748E;
-  fontSize: 1rem;
+  /* font-size: 1rem; */
 }
-.r-bar .top {
-  height: 252px;
+.r-top {
   width: 100%;
-  background: brown;
   border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #F0F0F7
 }
-.r-bar .top .title {
-
-} */
+.title {
+  width: 100%;
+  background: #F0F0F7;
+  padding: 12px 20px;
+  text-align: right;
+  display: inline-flex;
+}
+.order  {
+  width: 100%;
+  
+  padding: 10px 28px;
+}
+.sold {
+  width: 100%;
+  height: 53px;
+  margin-top: 153px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+  border-top: 1px solid #F0F0F7;
+  justify-content: space-between;
+}
+.button {
+  padding: 7px 23px;
+  background: #221ECC;
+  border-radius: 20px;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
 input {
   margin-right: 10px;
 }
