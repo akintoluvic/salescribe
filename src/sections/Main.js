@@ -7,7 +7,8 @@ function Main() {
         <p>Sales List</p>
         <div className='top-right'>
           <input placeholder='Filter List' />
-          
+          <div className='circle'></div>
+          <div className='circle'></div>
         </div>
         
       </div>

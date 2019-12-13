@@ -12,6 +12,7 @@
 }
 .l-bar, .main, .r-bar {
   height: 100vh;
+  box-sizing: border-box;
 }
 .l-bar {
   background-color: #F4F4FB;
@@ -24,20 +25,33 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+/* Main Axis */
 .main {
   display: flex;
   width: 100vw;
   flex-direction: column;
-  padding: 0 10px;
+  padding: 0 10px 0;
 }
 .main .top {
+  height: 75px;
+  /* position: absolute;
+  top: 0; */
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
 }
 .main .top p {
   font-size: 24px;
+}
+.top-right {
+  display: inline-flex;
+  align-items: center;
+}
+.top-right div {
+  background-color: #757890;
+  border-radius: 50%;
+  /* text-align: center; */
+  padding: 21px;
 }
 table {
   width: 100%;
@@ -92,7 +106,7 @@ tr:hover {
   /* height: 500px; */
   overflow-y: scroll;
 }
-.title {
+.title, .b-title {
   width: 100%;
   background: #F0F0F7;
   padding: 10px 20px;
@@ -103,8 +117,9 @@ tr:hover {
 }
 .b-title {
   padding: 5px 10px 5px 20px;
+  /* position: fixed; */
 }
-.title input {
+.b-title input {
   border-radius: 20px;
   border: 2px solid #F4F4FB;
   width: 150px;
@@ -141,6 +156,7 @@ tr:hover {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   padding: 3px 10px;
   border-radius: 5px;
 }

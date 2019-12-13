@@ -20,7 +20,7 @@ const RightSidebar = () => {
         </div>
       </div>
       <div className='r-bottom'  >
-        <div className='title b-title'>
+        <div className='b-title'>
           Add item to list
           <input placeholder='Filter List' />
         </div>
@@ -84,6 +84,37 @@ const RightSidebar = () => {
             </label>
             <span>100</span>
           </div>
+
+          <h4>Meat</h4>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+          <div className='options'>
+            <label htmlFor='meat'>
+              <input type='checkbox' id='meat' name='meat' />
+              Big goat meat
+            </label>
+            <span>100</span>
+          </div>
+
 
           <h4>Meat</h4>
           <div className='options'>
