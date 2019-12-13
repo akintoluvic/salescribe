@@ -4,7 +4,7 @@ function Main() {
   return (
     <div className="main">
       <div className='top'>
-        <p>Sales App</p>
+        <p>Sales List</p>
         <div className='top-right'>
           <input placeholder='Filter List' />
           

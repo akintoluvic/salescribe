@@ -7,7 +7,8 @@
   display: flex;
   width: 100vw;
   font-weight: bold;
-  font-family: 'Arial';
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 .l-bar {
@@ -19,6 +20,8 @@
   justify-content: space-between;
   width: 100px;
   height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .main {
   display: flex;
@@ -32,6 +35,9 @@
   align-items: center;
   height: 75px;
 }
+.main .top p {
+  font-size: 24px;
+}
 table {
   width: 100%;
   border-spacing: 0;
@@ -39,25 +45,24 @@ table {
 table .center {
   text-align: center;
 }
-table thead:last-child thead:first-child {
-  border-bottom-left-radius: 25px;
-}
-table tr:last-child() {
-  border-bottom-right-radius: 25px;
-  border-top-right-radius: 25px;
-}
-thead {
+
+thead, th {
   height: 40px;
   background-color: #F4F4FB;
   text-align: left;
-  border-radius: 5px;
+}
+/* table thead:last-child thead:first-child {
+  border-bottom-left-radius: 25px;
+} */
+thead:last-child {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
 }
 tbody > :nth-child(even) {
   background-color: #FAFAFC;
 }
 tr {
   height: 60px;
-  border-radius: 25px;
 }
 tr:hover {
   background-color: #F4F4FB;
@@ -83,7 +88,7 @@ tr:hover {
 input {
   margin-right: 10px;
 }
-span {text-align: right;}
+/* span {text-align: right;} */
 img {
   border-radius: 50%;
 }

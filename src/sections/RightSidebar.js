@@ -26,7 +26,7 @@ const RightSidebar = () => {
         </div>
         <div style={order}>
           <h4>Meat</h4>
-          <label htmlFor='meat-'>
+          <label for='meat-'>
             <input type='checkbox' name='meat-' />Big goat meat
             <span>100</span>
           </label>
@@ -75,7 +75,7 @@ const rBar = {
   padding: "15px",
   boxSizing: "border-box",
   color: '#72748E',
-  fontSize: '1rem',
+  // fontSize: '1rem',
 };
 const tTop = {  
   height: "252px",
@@ -100,7 +100,9 @@ const sold = {
   width: '100%',
   height: '53px',
   display: 'inline-flex',
-  alignItems: 'center'
+  alignItems: 'center',
+  padding: '0 20px',
+  justifyContent: 'space-between'
 }
 const button = {
   padding: '7px 23px',
