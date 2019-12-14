@@ -36,13 +36,13 @@
   padding: 10px 0;
   border-radius: 5px;
   text-decoration: none;
-  /* background-color: #DDDDF5; */
+  background-color: rgb(228, 228, 240);
 }
 .navs a:hover {
   background-color: #DDDDF5;
 }
 .navs a:active {
-  background-color: #DDDDF5;
+  background-color: rgb(168, 168, 216);
 }
 /* Main Axis */
 .main {

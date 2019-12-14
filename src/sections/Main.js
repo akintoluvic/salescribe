@@ -10,7 +10,6 @@ function Main() {
           <div className='circle'></div>
           <div className='circle'></div>
         </div>
-        
       </div>
       <div>
         <table>
