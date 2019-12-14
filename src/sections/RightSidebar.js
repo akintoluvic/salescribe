@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import Item from '../components/Item';
 
 const RightSidebar = () => {
   
@@ -26,147 +25,32 @@ const RightSidebar = () => {
         </div>
         <div className='order order-items'>
           <h4>Meat</h4>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <h4>Fish</h4>
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
           <h4>Meat</h4>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-
-          <h4>Meat</h4>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-
-
-          <h4>Meat</h4>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-          <div className='options'>
-            <label htmlFor='meat'>
-              <input type='checkbox' id='meat' name='meat' />
-              Big goat meat
-            </label>
-            <span>100</span>
-          </div>
-
-
-          
-
-          <h4>Meat</h4>
-          <label htmlFor='meat-1'>
-            <input type='checkbox' name='meat-1' />Big goat meat
-            <span>100</span>
-          </label>
-          <br></br>
-          <label htmlFor='meat-1'>
-            <input type='checkbox' name='meat-1' />Big goat meat
-          </label>
-          <br></br>
-          <label htmlFor='meat-1'>
-            <input type='checkbox' name='meat-1' />Big goat meat
-          </label>
-          <br></br>
-          <label htmlFor='meat-1'>
-            <input type='checkbox' name='meat-1' />Big goat meat
-          </label>
-          
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
         </div>
       </div>
     </div>

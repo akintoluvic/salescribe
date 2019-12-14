@@ -1,4 +1,6 @@
 import React from 'react';
+import Row from '../components/TableRow';
+import TableHeader from '../components/TableHeader';
 
 function Main() {
   return (
@@ -11,49 +13,24 @@ function Main() {
           <div className='circle'></div>
         </div>
       </div>
-      <div>
+      <table>
+        <TableHeader />
+      </table>
+      <div className='table-area'>
         <table>
-          <thead>
-            <th className='center'>
-              <input type='checkbox' />
-            </th>
-            <th>Serial No</th>
-            <th>Items Sold</th>
-            <th>Total Amount</th>
-            <th>Time Sold</th>
-            <th>Options</th>
-          </thead>
           <tbody>
-            <tr>
-              <td className='center'>
-                <input type='checkbox' />
-              </td>
-              <td>SD-4023</td>
-              <td>Resndj, fjff,dnjd, fjfjfjfuj</td>
-              <td>4,500</td>
-              <td>16:48</td>
-              <td>del ed</td>
-            </tr>
-            <tr>
-              <td className='center'>
-                <input type='checkbox' />
-              </td>
-              <td>SD-4023</td>
-              <td>Resndj, fjff,dnjd, fjfjfjfuj</td>
-              <td>4,500</td>
-              <td>16:48</td>
-              <td>del ed</td>
-            </tr>
-            <tr>
-              <td className='center'>
-                <input type='checkbox' />
-              </td>
-              <td>SD-4023</td>
-              <td>Resndj, fjff,dnjd, fjfjfjfuj</td>
-              <td>4,500</td>
-              <td>16:48</td>
-              <td>del ed</td>
-            </tr>
+            <Row />
+            <Row />
+            <Row />
+            <Row />
+            <Row />
+            <Row />
+            <Row />
+            <Row />
+            <Row />
+            <Row />
+            <Row />
+            <Row />
           </tbody>
         </table>
       </div>
