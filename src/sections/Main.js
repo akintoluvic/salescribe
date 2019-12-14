@@ -57,8 +57,6 @@ function Main() {
           </tbody>
         </table>
       </div>
-      
-        
     </div>
   );
 }

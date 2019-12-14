@@ -31,12 +31,12 @@
   align-items: center;
 }
 .navs a {
-  margin-top: 5px;
+  margin-top: 15px;
   width: 60px;
   padding: 10px 0;
   border-radius: 5px;
   text-decoration: none;
-  background-color: rgb(228, 228, 240);
+  /* background-color: rgb(228, 228, 240); */
 }
 .navs a:hover {
   background-color: #DDDDF5;
@@ -65,6 +65,12 @@
 .top-right {
   display: inline-flex;
   align-items: center;
+}
+.top-right input {
+  width: 180px;
+  padding: 10px 20px;
+  border: 2px solid #F4F4FB;
+  border-radius: 20px;
 }
 .circle {
   background-color: #757890;
