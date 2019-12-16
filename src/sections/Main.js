@@ -13,12 +13,12 @@ function Main() {
           <div className='circle'></div>
         </div>
       </div>
-      <table>
+      {/* <table>
         <TableHeader />
         <tbody>
           <Row />
         </tbody>
-      </table>
+      </table> */}
       <div className='table-area'>
         <table>
         <TableHeader  className="disp-none"/>
