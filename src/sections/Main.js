@@ -15,13 +15,13 @@ function Main() {
       </div>
       <table>
         <TableHeader />
-        {/* <tbody className="disp-none">
+        <tbody>
           <Row />
-        </tbody> */}
+        </tbody>
       </table>
       <div className='table-area'>
         <table>
-        {/* <TableHeader  className="disp-none"/> */}
+        <TableHeader  className="disp-none"/>
           <tbody>
             <Row />
             <Row />

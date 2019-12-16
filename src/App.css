@@ -88,7 +88,6 @@ table {
 table .center {
   text-align: center;
 }
-
 thead, th {
   height: 40px;
   background-color: #F4F4FB;
@@ -139,8 +138,14 @@ tr:hover {
   /* flex-grow: 0; */
   box-sizing: border-box;
 }
+.r-middle {
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #F0F0F7;
+  margin-bottom: 0;
+}
 .r-bottom {
   overflow-y: scroll;
+  border-radius: 0 0 5px 5px;
 }
 .title, .b-title {
   width: 100%;

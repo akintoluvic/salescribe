@@ -18,7 +18,7 @@ const RightSidebar = () => {
           <button className='button'>CONFIRM</button>
         </div>
       </div>
-      <div className='r-bottom'  >
+      <div className='r-middle'  >
         <div className='b-title'>
           Add item to list
           <input placeholder='Filter List' />

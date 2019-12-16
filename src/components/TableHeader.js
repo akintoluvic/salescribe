@@ -7,11 +7,7 @@ const TableHeader = () => {
               <input type='checkbox' disabled/>
             </th>
             <th>Serial No</th>
-            <th>Items Sold
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .
+            <th>Items, Sold,
             </th>
             <th>Total Amount</th>
             <th>Time Sold</th>
