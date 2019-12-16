@@ -15,10 +15,20 @@ function Main() {
       </div>
       <table>
         <TableHeader />
+        {/* <tbody className="disp-none">
+          <Row />
+        </tbody> */}
       </table>
       <div className='table-area'>
         <table>
+        {/* <TableHeader  className="disp-none"/> */}
           <tbody>
+            <Row />
+            <Row />
+            <Row />
+            <Row />
+            <Row />
+            <Row />
             <Row />
             <Row />
             <Row />

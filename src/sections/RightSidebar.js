@@ -23,6 +23,8 @@ const RightSidebar = () => {
           Add item to list
           <input placeholder='Filter List' />
         </div>
+      </div>
+      <div className='r-bottom'  >
         <div className='order order-items'>
           <h4>Meat</h4>
           <Item />

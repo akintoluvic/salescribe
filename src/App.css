@@ -101,8 +101,15 @@ thead:last-child {
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
 }
-tbody, .table-area {
+.table-area {
+  /* margin-top: -40px; */
   overflow-y: scroll;
+}
+.disp-none {
+  
+  display: none;
+  /* position: fixed;
+  top: 75px; */
 }
 tbody > :nth-child(even) {
   background-color: #FAFAFC;
