@@ -60,12 +60,3 @@ const RightSidebar = () => {
 }
 
 export default RightSidebar;
-
-// const rBar = {
-//   width: "500px",
-//   borderLeft: "2px solid #9391B1",
-//   padding: "15px",
-//   boxSizing: "border-box",
-//   color: '#72748E',
-//   // fontSize: '1rem',
-// };
