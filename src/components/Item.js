@@ -1,13 +1,14 @@
 import React from "react";
 
-const Item = () => {
+const Item = (props) => {
+  const { item } = props
   return (
     <div className="options">
-      <label htmlFor="meat">
-        <input type="checkbox" id="meat" name="meat" />
-        Big goat meat
+      <label htmlFor={item.sn}>
+        <input type="checkbox" id={item.sn} name={item.item} />
+        {item.item}
       </label>
-      <span>100</span>
+      <span>{item.price}</span>
     </div>
   );
 };

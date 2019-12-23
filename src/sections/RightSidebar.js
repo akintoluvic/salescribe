@@ -1,8 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Item from '../components/Item';
 
+const menu = [
+  {sn: 1, item: 'Fried Rice', price: 200, type: 'Rice'},
+  {sn: 2, item: 'Jollof Rice', price: 200, type: 'Rice'},
+  {sn: 3, item: 'White Rice', price: 200, type: 'Rice'},
+  {sn: 4, item: 'Eba', price: 100, type: 'Swallow'},
+  {sn: 5, item: 'Pounded Yam', price: 200, type: 'Swallow'},
+  {sn: 6, item: 'Semo Vita', price: 200, type: 'Swallow'},
+  {sn: 7, item: 'Small Goat Meat', price: 100, type: 'Meat'},
+  {sn: 8, item: 'Big Goat Meat', price: 200, type: 'Meat'},
+  {sn: 9, item: 'Beef', price: 200, type: 'Meat'},
+  {sn: 10, item: 'Small Chicken', price: 200, type: 'Chicken'},
+  {sn: 11, item: 'Medium Chicken', price: 200, type: 'Chicken'},
+  {sn: 12, item: 'Big Chicken', price: 200, type: 'Chicken'},
+  {sn: 13, item: 'Small Turkey', price: 100, type: 'Turkey'},
+  {sn: 14, item: 'Medium Turkey', price: 200, type: 'Turkey'},
+  {sn: 15, item: 'Big Turkey', price: 200, type: 'Turkey'},
+]
+const menuTypes = ['Rice', 'Meat', 'Turkey', 'Chicken', 'Swallow']
+
 const RightSidebar = () => {
+  const [items, setItems] = useState(menu);
+  const [order, setOrder] = useState([]);
+  const [types, setTypes] = useState(menuTypes);
+
   
+
   return (
     <div className='r-bar'>
       <div className='r-top' >
@@ -26,33 +50,8 @@ const RightSidebar = () => {
       </div>
       <div className='r-bottom'  >
         <div className='order order-items'>
-          <h4>Meat</h4>
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <h4>Fish</h4>
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <h4>Meat</h4>
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
+          {items.map(each => <Item item={each} key={each.item} />)}
+          {/* <Item /> */}
         </div>
       </div>
     </div>
