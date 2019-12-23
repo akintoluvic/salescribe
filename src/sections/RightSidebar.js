@@ -25,8 +25,6 @@ const RightSidebar = () => {
   const [order, setOrder] = useState([]);
   const [types, setTypes] = useState(menuTypes);
 
-  
-
   return (
     <div className='r-bar'>
       <div className='r-top' >

@@ -82,7 +82,11 @@
   /* text-align: center; */
   width: 42px;
   height: 42px;
+  margin-left: 5px;
   /* padding: 21px; */
+}
+.circle img {
+  height: 20px;
 }
 table {
   width: 100%;
@@ -119,6 +123,9 @@ tbody > :nth-child(even) {
 }
 tbody tr {
   height: 60px;
+}
+tbody tr img {
+  height: 16px;
 }
 tr:hover {
   background-color: #F4F4FB;
