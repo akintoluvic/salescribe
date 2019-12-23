@@ -74,6 +74,9 @@
   border-radius: 20px;
 }
 .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #757890;
   border-radius: 50%;
   /* text-align: center; */
@@ -213,7 +216,7 @@ input {
   margin-right: 10px;
 }
 /* span {text-align: right;} */
-img {
+.b-nav img {
   border-radius: 50%;
 }
 .App-header {

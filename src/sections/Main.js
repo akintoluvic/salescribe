@@ -1,6 +1,7 @@
 import React from 'react';
 import Row from '../components/TableRow';
 import TableHeader from '../components/TableHeader';
+import Trash from "../assets/trash-2.png";
 
 function Main() {
   return (
@@ -10,7 +11,9 @@ function Main() {
         <div className='top-right'>
           <input placeholder='Filter List' />
           <div className='circle'></div>
-          <div className='circle'></div>
+          <div className='circle'>
+            <img src={Trash} alt='Delete' />
+          </div>
         </div>
       </div>
       {/* <table>

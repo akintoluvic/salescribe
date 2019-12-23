@@ -24,7 +24,7 @@ function LeftSidebar() {
             <p>Price</p>
           </Link>
         </div>
-        <div className='navs'>
+        <div className='navs b-nav'>
         <img src={pic} alt='price menu' width='45px' height='45px' />
         </div>
     </div>

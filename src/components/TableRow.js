@@ -1,8 +1,7 @@
 import React from "react";
 import Edit from "../assets/edit.png";
-import Trash from "../assets/trash-2.png";
 
- const Row = () => {
+const Row = () => {
   return (
     <tr>
       <td className="center">
@@ -14,7 +13,6 @@ import Trash from "../assets/trash-2.png";
       <td>16:48</td>
       <td>
         <img src={Edit} alt='Edit' />
-        <img src={Trash} alt='Delete' />
       </td>
     </tr>
   );
