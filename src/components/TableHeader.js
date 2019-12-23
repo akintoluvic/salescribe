@@ -2,7 +2,8 @@ import React from 'react'
 
 const TableHeader = () => {
     return (
-        <thead>
+      <thead>
+        <tr>
             <th className='center'>
               <input type='checkbox' disabled/>
             </th>
@@ -11,7 +12,8 @@ const TableHeader = () => {
             <th>Total Amount</th>
             <th>Time Sold</th>
             <th>Options</th>
-          </thead>
+          </tr>
+      </thead>
     )
 }
 

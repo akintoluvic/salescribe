@@ -117,7 +117,7 @@ thead:last-child {
 tbody > :nth-child(even) {
   background-color: #FAFAFC;
 }
-tr {
+tbody tr {
   height: 60px;
 }
 tr:hover {

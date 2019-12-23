@@ -24,7 +24,7 @@ function Main() {
       </table> */}
       <div className='table-area'>
         <table>
-        <TableHeader  className="disp-none"/>
+          <TableHeader  className="disp-none"/>
           <tbody>
             <Row />
             <Row />
