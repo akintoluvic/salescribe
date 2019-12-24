@@ -18,6 +18,7 @@ const menu = [
   {sn: 14, item: 'Medium Turkey', price: 200, type: 'Turkey'},
   {sn: 15, item: 'Big Turkey', price: 200, type: 'Turkey'},
 ]
+
 const menuTypes = ['Rice', 'Meat', 'Turkey', 'Chicken', 'Swallow']
 
 const RightSidebar = () => {
