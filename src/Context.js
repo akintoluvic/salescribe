@@ -22,7 +22,6 @@ class RoomProvider extends Component {
     };
 
     // getData
-
     getData = async () => {
         try {
             let response = await Client.getEntries({
@@ -127,7 +126,6 @@ class RoomProvider extends Component {
         )
     }
 }
-
 
 const RoomConsumer = RoomContext.Consumer;
 

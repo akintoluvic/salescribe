@@ -50,7 +50,6 @@ const RightSidebar = () => {
       <div className='r-bottom'  >
         <div className='order order-items'>
           {items.map(each => <Item item={each} key={each.item} />)}
-          {/* <Item /> */}
         </div>
       </div>
     </div>
