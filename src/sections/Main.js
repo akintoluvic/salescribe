@@ -7,7 +7,7 @@ function Main() {
   return (
     <div className="main">
       <div className='top'>
-        <p>Sales List</p>
+        <p>Sales Scribe</p>
         <div className='top-right'>
           <input placeholder='Filter List' />
           <div className='circle'></div>
