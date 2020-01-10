@@ -1,7 +1,7 @@
 import React from "react";
 
 const Item = (props) => {
-  const { item } = props
+  const { item, onCheck } = props
   return (
     <div className="options">
       <label htmlFor={item.sn}>
@@ -9,6 +9,7 @@ const Item = (props) => {
           type="checkbox" 
           id={item.sn} 
           name={item.item} 
+          onChange={onCheck}
           />
         {item.item}
       </label>

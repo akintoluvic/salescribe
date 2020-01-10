@@ -17,7 +17,19 @@ const menu = [
   {sn: 13, item: 'Small Turkey', price: 100, type: 'Turkey'},
   {sn: 14, item: 'Medium Turkey', price: 200, type: 'Turkey'},
   {sn: 15, item: 'Big Turkey', price: 200, type: 'Turkey'},
+  {sn: 16, item: 'Small Chicken', price: 200, type: 'Chicken'},
+  {sn: 17, item: 'Medium Chicken', price: 200, type: 'Chicken'},
+  {sn: 18, item: 'Big Chicken', price: 200, type: 'Chicken'},
+  {sn: 19, item: 'Small Turkey', price: 100, type: 'Turkey'},
+  {sn: 20, item: 'Medium Turkey', price: 200, type: 'Turkey'},
+  {sn: 21, item: 'Big Turkey', price: 200, type: 'Turkey'},
 ]
+const men = {
+  1: {sn: 18, item: 'Big Chicken', price: 200, type: 'Chicken'},
+  2: {sn: 19, item: 'Small Turkey', price: 100, type: 'Turkey'},
+  3: {sn: 20, item: 'Medium Turkey', price: 200, type: 'Turkey'},
+  4: {sn: 21, item: 'Big Turkey', price: 200, type: 'Turkey'},
+}
 
 const menuTypes = ['Rice', 'Meat', 'Turkey', 'Chicken', 'Swallow']
 
@@ -25,6 +37,11 @@ const RightSidebar = () => {
   const [items, setItems] = useState(menu);
   const [order, setOrder] = useState([]);
   const [types, setTypes] = useState(menuTypes);
+  const [checked, setChecked] = useState(false);
+
+  const handleCheck = (e) => {
+      console.log(e.target.name, 'C click')
+  }
 
   return (
     <div className='r-bar'>
@@ -49,7 +66,7 @@ const RightSidebar = () => {
       </div>
       <div className='r-bottom'  >
         <div className='order order-items'>
-          {items.map(each => <Item item={each} key={each.item} />)}
+          {items.map(each => <Item item={each} key={each.sn} onCheck={handleCheck}/>)}
         </div>
       </div>
     </div>
