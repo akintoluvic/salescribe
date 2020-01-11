@@ -41,6 +41,7 @@ const RightSidebar = () => {
 
   const handleCheck = (e) => {
       console.log(e.target.name, 'C click')
+      setOrder([...order, e.target.name])
   }
 
   return (
@@ -50,7 +51,7 @@ const RightSidebar = () => {
           New Order
         </div>
         <div className='order'>
-          Fried Rice, Big Chicken, Salad, Big Eva Bottle Water
+          {order}
         </div>
         <div className='sold'>
           <p>Total Amount</p>
