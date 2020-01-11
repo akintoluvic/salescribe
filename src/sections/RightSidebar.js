@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Item from '../components/Item';
 
 const menu = [
@@ -35,14 +35,20 @@ const menuTypes = ['Rice', 'Meat', 'Turkey', 'Chicken', 'Swallow']
 
 const RightSidebar = () => {
   const [items, setItems] = useState(menu);
-  const [order, setOrder] = useState([]);
+  const [order, setOrder] = useState('');
   const [types, setTypes] = useState(menuTypes);
   const [checked, setChecked] = useState(false);
 
   const handleCheck = (e) => {
       console.log(e.target.name, 'C click')
-      setOrder([...order, e.target.name])
+      // setOrder([...order, e.target.name])
+      let updatedOrder = order + ', ' + e.target.name
+      setOrder(updatedOrder)
   }
+
+  // const totalOrder = order.reduce((currentOrder, previousOrder, index) => 
+  //     `{previousOrder}, + {currentOrder}`
+  // )
 
   return (
     <div className='r-bar'>
