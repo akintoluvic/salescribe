@@ -10,6 +10,7 @@ const Item = (props) => {
           id={item.sn} 
           name={item.item} 
           onChange={onCheck}
+          checked={false}
           />
         {item.item}
       </label>
