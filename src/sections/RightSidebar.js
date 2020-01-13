@@ -33,7 +33,8 @@ const men = {
 
 const menuTypes = ['Rice', 'Meat', 'Turkey', 'Chicken', 'Swallow']
 
-const RightSidebar = () => {
+const RightSidebar = props => {
+  const { newSale } = props;
   const [items, setItems] = useState(menu);
   const [order, setOrder] = useState('');
   const [amount, setAmount] = useState(0);
@@ -42,8 +43,6 @@ const RightSidebar = () => {
   const [checked, setChecked] = useState(false);
 
   const handleCheck = (e) => {
-      console.log(e.target.name, 'C click')
-      // setOrder([...order, e.target.name])
       let clickedItem = items.filter(item => item.item === e.target.name)
       setOrdered([...ordered, {item: clickedItem[0].item, price: clickedItem[0].price}])
       let updatedOrder = order.length === 0 ? e.target.name : order + ', ' + e.target.name
@@ -53,10 +52,6 @@ const RightSidebar = () => {
       setAmount(updatedAmount)
       setOrder(updatedOrder)
   }
-
-  // const totalOrder = order.reduce((currentOrder, previousOrder, index) => 
-  //     `{previousOrder}, + {currentOrder}`
-  // )
 
   return (
     <div className='r-bar'>
@@ -70,7 +65,7 @@ const RightSidebar = () => {
         <div className='sold'>
           <p>Total Amount</p>
           <p >N {amount}</p>
-          <button className='button'>CONFIRM</button>
+          <button className='button' onClick={() => newSale(ordered)}>CONFIRM</button>
         </div>
       </div>
       <div className='r-middle'  >
