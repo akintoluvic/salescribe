@@ -3,6 +3,16 @@ import Row from '../components/TableRow';
 import TableHeader from '../components/TableHeader';
 import Trash from "../assets/trash-2.png";
 
+const eachSale = {
+  sn: 'MT30-150',
+  items: [
+    {item: 'Goat meat', price: 300},
+    {item: 'Goat meat', price: 300}
+  ],
+  total: 4500,
+  time: '14:00'
+}
+
 function Main() {
   return (
     <div className="main">

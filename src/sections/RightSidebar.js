@@ -45,7 +45,7 @@ const RightSidebar = () => {
       console.log(e.target.name, 'C click')
       // setOrder([...order, e.target.name])
       let clickedItem = items.filter(item => item.item === e.target.name)
-      setOrdered([...ordered, ...clickedItem])
+      setOrdered([...ordered, {item: clickedItem[0].item, price: clickedItem[0].price}])
       let updatedOrder = order.length === 0 ? e.target.name : order + ', ' + e.target.name
       let updatedAmount = amount + clickedItem[0].price
       console.log(clickedItem, clickedItem[0].price, updatedAmount)
