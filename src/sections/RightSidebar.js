@@ -36,6 +36,7 @@ const menuTypes = ['Rice', 'Meat', 'Turkey', 'Chicken', 'Swallow']
 const RightSidebar = () => {
   const [items, setItems] = useState(menu);
   const [order, setOrder] = useState('');
+  const [amount, setAmount] = useState(0);
   const [types, setTypes] = useState(menuTypes);
   const [checked, setChecked] = useState(false);
 
@@ -43,8 +44,10 @@ const RightSidebar = () => {
       console.log(e.target.name, 'C click')
       // setOrder([...order, e.target.name])
       let clickedItem = items.filter(item => item.item === e.target.name)
-      console.log(clickedItem)
       let updatedOrder = order.length === 0 ? e.target.name : order + ', ' + e.target.name
+      let updatedAmount = amount + clickedItem[0].price
+      console.log(clickedItem, clickedItem[0].price, updatedAmount)
+      setAmount(updatedAmount)
       setOrder(updatedOrder)
   }
 
@@ -63,7 +66,7 @@ const RightSidebar = () => {
         </div>
         <div className='sold'>
           <p>Total Amount</p>
-          <p >N23,560</p>
+          <p >N {amount}</p>
           <button className='button'>CONFIRM</button>
         </div>
       </div>
