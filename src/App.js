@@ -10,7 +10,7 @@ function App() {
   const [sold, setSold] = useState([]);
   const updateSold = value => {
     console.log(value)
-      setSold(value);
+      setSold([value, ...sold]);
   }
   return (
     <div className="App">

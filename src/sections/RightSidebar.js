@@ -53,6 +53,10 @@ const RightSidebar = props => {
       setOrder(updatedOrder)
   }
 
+  const onSale = () => {
+      newSale(ordered)
+  }
+
   return (
     <div className='r-bar'>
       <div className='r-top' >
@@ -65,7 +69,7 @@ const RightSidebar = props => {
         <div className='sold'>
           <p>Total Amount</p>
           <p >N {amount}</p>
-          <button className='button' onClick={() => newSale(ordered)}>CONFIRM</button>
+          <button className='button' onClick={onSale}>CONFIRM</button>
         </div>
       </div>
       <div className='r-middle'  >
