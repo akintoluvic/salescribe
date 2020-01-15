@@ -47,7 +47,6 @@ const RightSidebar = props => {
       setOrdered([...ordered, {item: clickedItem[0].item, price: clickedItem[0].price}])
       let updatedOrder = order.length === 0 ? e.target.name : order + ', ' + e.target.name
       let updatedAmount = amount + clickedItem[0].price
-      console.log(clickedItem, clickedItem[0].price, updatedAmount)
       
       setAmount(updatedAmount)
       setOrder(updatedOrder)
@@ -58,11 +57,8 @@ const RightSidebar = props => {
     setOrderNo(nop)
     const date = new Date()
     const time = `${date.getHours()}:${date.getMinutes()}`
-    const SN = `${date.getFullYear()}-${orderNo}-`
-    console.log(orderNo, SN, date.getDate(),
-       date.getMonth(),
-       time
-      )
+    const SN = `${date.getFullYear()}-${date.getMonth()}-${orderNo}`
+
     let newOrder = { SN, ordered, time }
     console.log(newOrder)
     newSale(newOrder)

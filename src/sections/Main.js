@@ -38,7 +38,6 @@ function Main(props) {
           <TableHeader  className="disp-none"/>
           <tbody>
           {allSale.map(each => <Row />)}
-            {/* <Row />
             <Row />
             <Row />
             <Row />
@@ -46,16 +45,6 @@ function Main(props) {
             <Row />
             <Row />
             <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row /> */}
           </tbody>
         </table>
       </div>
