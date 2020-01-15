@@ -13,7 +13,8 @@ const eachSale = {
   time: '14:00'
 }
 
-function Main() {
+function Main(props) {
+  const { allSale } = props;
   return (
     <div className="main">
       <div className='top'>
@@ -36,6 +37,8 @@ function Main() {
         <table>
           <TableHeader  className="disp-none"/>
           <tbody>
+          {allSale.map(each => <Row />)}
+            {/* <Row />
             <Row />
             <Row />
             <Row />
@@ -52,8 +55,7 @@ function Main() {
             <Row />
             <Row />
             <Row />
-            <Row />
-            <Row />
+            <Row /> */}
           </tbody>
         </table>
       </div>

@@ -40,7 +40,7 @@ const RightSidebar = props => {
   const [amount, setAmount] = useState(0);
   const [ordered, setOrdered] = useState([]);
   const [types, setTypes] = useState(menuTypes);
-  const [checked, setChecked] = useState(false);
+  const [orderNo, setOrderNo] = useState(1);
 
   const handleCheck = (e) => {
       let clickedItem = items.filter(item => item.item === e.target.name)
@@ -54,7 +54,18 @@ const RightSidebar = props => {
   }
 
   const onSale = () => {
-      newSale(ordered)
+    const nop = orderNo + 1
+    setOrderNo(nop)
+    const date = new Date()
+    const time = `${date.getHours()}:${date.getMinutes()}`
+    const SN = `${date.getFullYear()}-${orderNo}-`
+    console.log(orderNo, SN, date.getDate(),
+       date.getMonth(),
+       time
+      )
+    let newOrder = { SN, ordered, time }
+    console.log(newOrder)
+    newSale(newOrder)
   }
 
   return (

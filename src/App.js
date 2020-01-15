@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <LeftSidebar />
-      <Main />
+      <Main allSale={sold}/>
       <RightSidebar newSale={updateSold}/>
     </div>
   );
