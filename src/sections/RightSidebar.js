@@ -52,6 +52,16 @@ const RightSidebar = props => {
       setOrder(updatedOrder)
   }
 
+  const addItem = (val) => {
+    let clickedItem = items.filter(item => item.item === val)
+    setOrdered([...ordered, {item: clickedItem[0].item, price: clickedItem[0].price}])
+    let updatedOrder = order.length === 0 ? val : order + ', ' + val
+    let updatedAmount = amount + clickedItem[0].price
+    
+    setAmount(updatedAmount)
+    setOrder(updatedOrder)
+}
+
   const onSale = () => {
     const nop = orderNo + 1
     setOrderNo(nop)
@@ -90,7 +100,7 @@ const RightSidebar = props => {
       </div>
       <div className='r-bottom'  >
         <div className='order order-items'>
-          {items.map(each => <Item item={each} key={each.sn} onCheck={handleCheck}/>)}
+          {items.map(each => <Item item={each} key={each.sn} onCheck={handleCheck} addItem={addItem} />)}
         </div>
       </div>
     </div>

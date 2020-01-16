@@ -1,15 +1,11 @@
 import React from "react";
 
 const Item = (props) => {
-  const { item, onCheck } = props
+  const { item, onCheck, addItem } = props
   return (
-    <div className="options" name={item.item} onClick={() => console.log('KK', )}>
+    <div className="options" name={item.item} onClick={() => addItem(item.item)}>
       <label htmlFor={item.sn}>
-        <input 
-          type="checkbox" 
-          id={item.sn} 
-          name={item.item} 
-          onChange={onCheck}
+        <span 
           />
         {item.item}
       </label>
