@@ -62,13 +62,16 @@ const RightSidebar = props => {
     let newOrder = { SN, ordered, time }
     console.log(newOrder)
     newSale(newOrder)
+    setOrder('');
   }
 
   return (
     <div className='r-bar'>
       <div className='r-top' >
         <div className='title'>
-          New Order
+          New Order 
+          <span onClick={() => setOrder('')}
+          >clear</span>
         </div>
         <div className='order'>
           {order}
